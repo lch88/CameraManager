@@ -875,6 +875,10 @@ open class CameraManager: NSObject, AVCaptureFileOutputRecordingDelegate, UIGest
             view.layer.addSublayer(self.previewLayer!)
         })
     }
+    
+    open func setupMaxZoomScale() {
+        _setupMaxZoomScale()
+    }
 
     fileprivate func _setupMaxZoomScale() {
         var maxZoom = CGFloat(1.0)
