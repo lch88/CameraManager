@@ -49,7 +49,7 @@ import PackageDescription
 
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/imaginary-cloud/CameraManager", majorVersion: 2, minor: 2)
+        .Package(url: "https://github.com/imaginary-cloud/CameraManager", majorVersion: 3, minor: 1)
     ]
 )
 ```
@@ -92,7 +92,21 @@ cameraManager.cameraDevice = .Front
 cameraManager.cameraDevice = .Back
 ```
 
+You can specify if the front camera image should be horizontally fliped:
+
+```swift
+cameraManager.shouldFlipFrontCameraImage = true
+```
+
+You can enable or disable gestures on camera preview:
+
+```swift
+cameraManager.shouldEnableTapToFocus = true
+cameraManager.shouldEnablePinchToZoom = true
+```
+
 You can set output format to Image, video or video with audio:
+
 ```swift
 cameraManager.cameraOutputMode = .StillImage
 cameraManager.cameraOutputMode = .VideoWithMic
@@ -170,7 +184,7 @@ cameraManager.stopVideoRecording({ (videoURL, error) -> Void in
 
 ## Support
 
-Supports iOS 8 and above. Xcode 7.0 is required to build the latest code written in Swift 2.0.
+Supports iOS 8 and above. Xcode 8.0 is required to build the latest code written in Swift 3.0.
 
 ## License
 
