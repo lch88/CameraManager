@@ -2,6 +2,90 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.3.0](https://github.com/imaginary-cloud/CameraManager/tree/4.3.0) - 2018-08-17
+### Added
+
+- Add video stabilization mode (pull request #160)
+
+## [4.2.3](https://github.com/imaginary-cloud/CameraManager/tree/4.2.3) - 2018-07-27
+### Fixed
+
+- Deinit cause crash when `cameraDevice = .front` (#157)
+
+### Changed
+
+- Add note to documentation when a property has a default value
+
+## [4.2.2](https://github.com/imaginary-cloud/CameraManager/tree/4.2.2) - 2018-07-26
+### Added
+
+- Add `CONTRIBUTING.md`
+
+### Fixed
+
+- When recording is finished `videoURL` is always nil (#158)
+
+
+## [4.2.1](https://github.com/imaginary-cloud/CameraManager/tree/4.2.1) - 2018-06-20
+### Added
+
+- Add `CODE_OF_CONDUCT.md`
+
+### Fixed
+
+- Fix flash for video (#152)
+
+## [4.2.0](https://github.com/imaginary-cloud/CameraManager/tree/4.2.0) - 2018-06-19
+### Added
+
+- Add properties for setting custom album names for image and video recordings (pull request #147)
+- Add Exposure slider (pull request #148)
+
+### Fixed
+
+- Orientation bug (pull request #150)
+- Video orientation not set after camera switch (#64)
+- Memory leak in Example App
+
+## [4.1.1](https://github.com/imaginary-cloud/CameraManager/tree/4.1.1) - 2018-05-16
+### Fixed
+
+- License
+
+## [4.1.0](https://github.com/imaginary-cloud/CameraManager/tree/4.1.0) - 2018-05-15
+### Added
+
+- Add EXIF metadata for images and video - including location (#131)
+- New layout for Example App
+
+### Fixed
+
+- Fix Crash (pull request #141)
+- Fix image orientation when taking pictures with device rotation lock active 
+
+## [4.0.2](https://github.com/imaginary-cloud/CameraManager/tree/4.0.2) - 2018-05-07
+### Fixed 
+
+- Using CoreMotion to get real device orientation, fixing no sound when switching camera (pull request #134)
+- Fixed take picture on iPad with front camera(landscape, UpsideDown… (pull request #139)
+
+- Bugs (issue #115)
+- Not able to to get sound while recording from front camera (#116)
+- Urgent: toggle camera back to front no sound coming in recorded video (issue #118)
+- Orientation issues (landscape) (issue #135)
+- Resuming capture session improvement (issue #136)
+- Issue with focus area (issue #137)
+- Repeat crash CameraManager.swift line 430 in release (issue #138)
+
+## [4.0.1](https://github.com/imaginary-cloud/CameraManager/tree/4.0.1) - 2017-11-18
+### Added
+
+- Add @discardableResult modifiers to addPreviewLayerToView (pull request #132)
+
+### Fixed 
+
+- Fix shouldEnableTapToFocus function (pull request #133)
+
 ## [4.0.0](https://github.com/imaginary-cloud/CameraManager/tree/4.0.0) - 2017-10-22
 ### Changed
 
